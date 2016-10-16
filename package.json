@@ -1,0 +1,16 @@
+{
+  "name": "airline",
+  "version": "0.0.0",
+  "description": "A cli app to process ABNF files and output the result",
+  "main": "lib/index.js",
+  "dependencies": {
+    "cli": "~0.11.1",
+    "debug": "~2.2.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "author": "Victor Zidaroiu",
+  "license": "BSD-2-Clause"
+}
