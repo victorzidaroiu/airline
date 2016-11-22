@@ -1,4 +1,4 @@
-## Flight Parser CLI APP
+## Flight Parser CLI
 
 Uses the flight parser library to parse flights from input files into output files.
 
@@ -6,8 +6,6 @@ Uses the flight parser library to parse flights from input files into output fil
 
 npm install
 
-See install instructions for the flight parser library in it's readme.
-
 ### Usage
 
-node index.js path_to_input_file [path_to_output_file]
+node . path_to_input_file [path_to_output_file] (eg:  node . data/flight1.in)

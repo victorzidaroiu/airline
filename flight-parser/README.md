@@ -10,7 +10,7 @@ npm install -g grunt-cli;npm install -g mocha;npm install -g watch;npm install -
 
 var flightParser = require('./flight-parser');
 flightParser(data, function(outputData){
-	
+
 });
 
 ### Build
