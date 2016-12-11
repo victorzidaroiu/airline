@@ -4,13 +4,27 @@
   "description": "A cli app to process ABNF files and output the result",
   "main": "lib/index.js",
   "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "bluebird": "^3.4.6",
+    "chai": "^3.5.0",
     "cli": "~0.11.1",
-    "debug": "~2.2.0"
+    "debug": "~2.2.0",
+    "mocha": "^3.2.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "mocha"
+    "lint": "eslint .",
+    "start": "node .",
+    "test": "mocha --compilers js:babel-core/register ./tests/*"
   },
   "author": "Victor Zidaroiu",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "eslint": "^3.12.0",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
+  }
 }
